@@ -400,6 +400,35 @@
       font-size: 13px;
       color: var(--muted);
       margin-bottom: 6px;
+      display: none;
+    }
+
+    .work-content h3 a {
+      color: var(--text);
+      text-decoration: none;
+      background-image: linear-gradient(var(--accent), var(--accent));
+      background-size: 0% 2px;
+      background-repeat: no-repeat;
+      background-position: left bottom;
+      transition: background-size 0.25s ease, color 0.2s;
+      padding-bottom: 2px;
+    }
+
+    .work-content h3 a:hover {
+      color: var(--link);
+      background-size: 100% 2px;
+    }
+
+    .work-content h3 a::after {
+      content: ' ↗';
+      font-size: 11px;
+      opacity: 0;
+      transition: opacity 0.2s;
+      color: var(--accent);
+    }
+
+    .work-content h3 a:hover::after {
+      opacity: 1;
     }
 
     .work-content .work-desc {
@@ -510,7 +539,7 @@
           1. Save your photo as "profile.jpg" in the same folder as this file
           2. Uncomment the <img> tag below and delete the <span> placeholder
         -->
-        <img src="https://avatars.githubusercontent.com/u/marvelchandra?v=4" alt="Chandra Buduri" onerror="this.style.display='none'" />
+        <img src="https://unavatar.io/github/marvelchandra" alt="Chandra Buduri" />
       </div>
     </div>
 
@@ -686,25 +715,41 @@
         <div class="work-item">
           <div class="work-period">~/sourcing</div>
           <div class="work-content">
-            <h3>Sourcing Frameworks</h3>
-            <div class="work-company"><a href="https://marvelchandra.github.io/recruiting-portfolio" target="_blank">marvelchandra.github.io/recruiting-portfolio</a></div>
+            <h3><a href="https://github.com/marvelchandra/ai-ml-sourcing-kit" target="_blank">AI/ML Sourcing Kit</a></h3>
+            <div class="work-company">github.com/marvelchandra/ai-ml-sourcing-kit</div>
             <p class="work-desc">ArXiv mining, GitHub API contributor scripts, X-Ray Boolean libraries, patent database workflows, and university lab pipelines — documented end-to-end for AI/ML, Semiconductor, and GTM roles.</p>
           </div>
         </div>
         <div class="work-item">
           <div class="work-period">~/playbooks</div>
           <div class="work-content">
-            <h3>Hiring Playbooks</h3>
-            <div class="work-company"><a href="https://marvelchandra.github.io/recruiting-portfolio" target="_blank">marvelchandra.github.io/recruiting-portfolio</a></div>
+            <h3><a href="https://github.com/marvelchandra/founding-recruiter-playbook" target="_blank">Founding Recruiter Playbook</a></h3>
+            <div class="work-company">github.com/marvelchandra/founding-recruiter-playbook</div>
             <p class="work-desc">The 0→1 founding recruiter playbook, market mapping guide, comp benchmarking framework, employer branding system, and onboarding infrastructure — built for Series A–C startups.</p>
           </div>
         </div>
         <div class="work-item">
-          <div class="work-period">~/intel</div>
+          <div class="work-period">~/boolean</div>
           <div class="work-content">
-            <h3>Market Intelligence</h3>
-            <div class="work-company"><a href="https://marvelchandra.github.io/recruiting-portfolio" target="_blank">marvelchandra.github.io/recruiting-portfolio</a></div>
-            <p class="work-desc">Competitive landscape frameworks, comp band building with equity modeling, talent movement pattern analysis, and win/loss templates for hiring leadership.</p>
+            <h3><a href="https://github.com/marvelchandra/boolean-string-library" target="_blank">Boolean String Library</a></h3>
+            <div class="work-company">github.com/marvelchandra/boolean-string-library</div>
+            <p class="work-desc">X-Ray and Boolean search strings for sourcing technical, GTM, executive, and G&A talent — battle-tested across 600+ hires at Cisco, Arrcus, Astera Labs, and Factory VC portfolio companies.</p>
+          </div>
+        </div>
+        <div class="work-item">
+          <div class="work-period">~/metrics</div>
+          <div class="work-content">
+            <h3><a href="https://github.com/marvelchandra/recruiting-metrics-dashboard" target="_blank">Recruiting Metrics Dashboard</a></h3>
+            <div class="work-company">github.com/marvelchandra/recruiting-metrics-dashboard</div>
+            <p class="work-desc">KPI framework, Google Sheets formulas, weekly CEO report template, and QBR deck — the exact metrics used to report to CEOs at Arrcus, Factory VC, and CommScope.</p>
+          </div>
+        </div>
+        <div class="work-item">
+          <div class="work-period">~/comp</div>
+          <div class="work-content">
+            <h3><a href="https://github.com/marvelchandra/comp-benchmarking-toolkit" target="_blank">Comp Benchmarking Toolkit</a></h3>
+            <div class="work-company">github.com/marvelchandra/comp-benchmarking-toolkit</div>
+            <p class="work-desc">Free and paid data sources, comp band building, equity modeling, offer framework, and negotiation guide — built for startups benchmarking without a compensation consultant.</p>
           </div>
         </div>
       </div>
